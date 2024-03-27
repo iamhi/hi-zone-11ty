@@ -1,0 +1,17 @@
+<footer>
+	<div>
+		<nav>
+			{% for mainpage in collections.navpages %}
+			<a href="{{mainpage.url}}"
+				class="">
+				{{ mainpage.data.title }}</a>
+			{% endfor %}
+		</nav>
+	</div>
+	<div>
+		<!-- contacts -->
+	</div>
+	<div>
+		<!-- socials -->
+	</div>
+</footer>

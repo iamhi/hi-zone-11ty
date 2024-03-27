@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+	<head>
+		{% include "basehead.html" %}
+		{% block head %}
+		{% endblock %}
+	</head>
+	<body>
+		{% block content %}
+			{{ content | safe }}
+		{% endblock %}
+
+		{% include "globaljs.html" %}
+	</body>
+</html>

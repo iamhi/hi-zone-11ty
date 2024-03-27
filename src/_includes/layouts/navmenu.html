@@ -1,0 +1,9 @@
+{% set currentUrl = page.url %}
+
+<nav>
+	{% for mainpage in collections.navpages %}
+	<a href="{{mainpage.url}}"
+		class="{% if currentUrl === mainpage.url %}current{% endif %}">
+		{{ mainpage.data.title }}</a>
+	{% endfor %}
+</nav>

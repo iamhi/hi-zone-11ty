@@ -1,0 +1,9 @@
+{% extends "layouts/page.html" %}
+
+{% block main %}
+	<div>
+		{{ content | safe }}
+	</div>
+
+	<a href="{{ '/blogs/' | url }}">Go back</a>
+{% endblock %}
